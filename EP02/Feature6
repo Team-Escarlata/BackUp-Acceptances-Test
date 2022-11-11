@@ -1,0 +1,11 @@
+Feature: HU15 Visualizar del logo y su slogan
+
+    Creación del archivo “home.html” y su implementación en CSS
+Scenario: Creación de la sección inicio
+    TA01:
+    Given se encuentra ingresando a la app
+    When  observa el slogan y el logo
+    Then  la app le muestra la sección de inicio
+    Examples:
+        | Ingresar app  | resultado | resultado |
+        | click()  | visualiza | visualiza  |
