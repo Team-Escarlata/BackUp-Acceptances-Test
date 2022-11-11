@@ -1,0 +1,20 @@
+Feature: HU11 Conocer las funcionalidades de la aplicación
+
+    Creación del archivo “student.html” y su implementación en CSS
+    Scenario:E01: Creación de la sección “características  estudiantes”
+    TA01:
+    Given el usuario estudiante en su perfil 
+    When  selecciona crear ``características``
+    Then  aparece una nueva ``características`` creada
+    Examples:
+        | Perfil usuario | Boton crear características | resultado |
+        | click() | click() | visualizar la nueva características |
+
+    Scenario: E02: Creación de la sección “características asesores”
+    TA02:
+    Given el usuario asesor en su perfil 
+    When   selecciona crear ``características``
+    Then  aparece una nueva ``características`` creada
+    Examples:
+        | Perfil usuario | Boton crear características | resultado |
+        | click() | click() | visualizar la nueva características |
