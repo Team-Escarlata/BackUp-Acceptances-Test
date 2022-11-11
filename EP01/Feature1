@@ -1,0 +1,11 @@
+Feature: HU10 Observar la información imprescindible
+        Creación del archivo footer.html y su implementación en CSS
+
+Scenario: Creación del footer
+    TA01:
+    Given el usuario quiere crear un footer
+    When  ingresa a la sección de buscar
+    Then visualiza la opción crear fotter
+    Examples:
+        | Herramienta Crear footer | Boton crear footer | resultado |
+        | click()  | click() | visualiza footer creado  |
