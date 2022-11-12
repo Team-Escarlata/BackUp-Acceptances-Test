@@ -1,0 +1,8 @@
+Feature: HU19
+Scenario: Escoger un lenguaje de programación 
+    Given el usuario se encuentro en el formulario de “Crear nuevo proyecto”
+    When el usuario complete el registro colocando el nombre del proyecto y descripción
+    Then el sistema le mostrará el entorno de desarrollo
+    Examples:
+        | Sección crear proyecto | Registro | resultado |
+        | click()  | digita()  | visualiza |
