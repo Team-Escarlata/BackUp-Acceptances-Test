@@ -1,11 +1,9 @@
-Feature: HU13 Contactar con la empresa
-
-   Creación del archivo “contact.html” y su implementación en CSS
-Scenario: Creación de la sección contactar
+Feature: HU04
+Scenario: Comentar códigos abiertos
 TA01:
-    Given el usuario se quiere contactar con la empresa
-    When selecciona la opción contactanos
-    Then aparece el formulario para envio hacia el correo empresarial
+    Given el asesor se encuentra en la ventana de un código público
+    When clickee el botón “comentar” y escriba un comentario
+    Then podrá visualizar en comentario compartido
     Examples:
-        | Inicio sesión | “Boton contactanos” | formulario |
-        | Bryan Vilca  | click() | rellenar()  |
+        | Sección Public Code | Boton comentar | resultado |
+        | click() | click() | visualiza  |
