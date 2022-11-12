@@ -1,0 +1,8 @@
+Feature: HU11
+Scenario: Buscar Guías Temáticas
+    Given  el estudiante se encuentra en la sección de Búsqueda
+    When el estudiante digita alguna palabra
+    Then el sistema mostrará videos relacionados a la palabra
+    Examples:
+        | Sección busqueda | Barra busqueda | resultado |
+        | visualiza  | digita()  | visualiza  |
