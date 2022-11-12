@@ -1,11 +1,11 @@
-Feature: HU10 Observar la información imprescindible
-        Creación del archivo footer.html y su implementación en CSS
-
-Scenario: Creación del footer
+Feature: HU01 
+Scenario: Formulario de registro de cuenta 
     TA01:
-    Given el usuario quiere crear un footer
-    When  ingresa a la sección de buscar
-    Then visualiza la opción crear fotter
+    Given el usuario se encuentra en el formulario de registro de cuentas para asesores
+    When ingresa una cuenta no registrada, su correo electrónico y una contraseña válida
+    junto a la confirmación de contraseña y presione la tecla “Registrarse”
+    Then la aplicación dará inicio en la sesión y mostrará un mensaje de “Registro satisfactorio”
     Examples:
-        | Herramienta Crear footer | Boton crear footer | resultado |
-        | click()  | click() | visualiza footer creado  |
+        | Sección Registro Asesor | Registrar Asesor | resultado |
+        | click()  | click() | visualiza “Registro satisfactorio” |
+    
