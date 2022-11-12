@@ -1,0 +1,9 @@
+Feature: HU12
+Scenario: Editar y crear código
+    Given  el estudiante tiene una sesión iniciada en la aplicación 
+    When el estudiante presiona el botón “crear nuevo proyecto”
+    Then el sistema muestra en pantalla un entorno de desarrollo
+    integrado para editar y crear código en el lenguaje seleccionado
+    Examples:
+        | Sección Inicio | Boton nuevo proyecto | resultado |
+        | visualiza  | click()  | visualiza  |
