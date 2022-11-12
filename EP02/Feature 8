@@ -1,0 +1,8 @@
+Feature: HU08
+Scenario: Visualizar una lista de asesores disponibles
+    Given el estudiante selecciona se encuentra en la ventana de “Asesores”
+    When  haga click en la opción mostrar asesores
+    Then la aplicación mostrará un listado de todas los asesores disponibles
+    Examples:
+        | Sección Asesores | Botón Mostrar asesores | resultado |
+        | click()  | click()  | visualiza  |
