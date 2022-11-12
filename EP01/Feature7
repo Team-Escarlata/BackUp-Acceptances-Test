@@ -1,0 +1,9 @@
+Feature: HU07
+Scenario: Visualizar cantidad de usuarios
+    TA01:
+    Given que el estudiante busque el perfil del asesor
+    When los estudiantes le den “click” al microcurso de el asesor de su preferencia
+    Then el sistema registra el ingreso de un estudiante al microcurso.
+    Examples:
+        | Buscar Asesor | Busca microcurso | registro |
+        | click()  | click() | visualiza  |
