@@ -1,0 +1,9 @@
+Feature: HU15
+Scenario: Formulario de registro de cuenta
+    Given se encuentra en el formulario de registro de cuentas para asesores
+    When ingresa una cuenta no registrada
+    Then la aplicación dará inicio en la sesión y 
+    mostrará un mensaje de “Registro satisfactorio”
+    Examples:
+        | Sección Registrar | Creando nueva Cuenta | resultado |
+        | click()  | click()  | visualiza |
