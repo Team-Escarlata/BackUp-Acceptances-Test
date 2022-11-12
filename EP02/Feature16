@@ -1,0 +1,8 @@
+Feature: HU16
+Scenario: Formulario login
+    Given el asesor se encuentra en el formulario de “Login”
+    When ingrese el correo electrónico y contraseña
+    Then podrá acceder a la aplicación de manera exitosa
+    Examples:
+        | Sección Login | Ingresar cuenta | resultado |
+        | click()  | Digitando()  | visualiza |
