@@ -1,0 +1,8 @@
+Feature: HU18
+Scenario: Visualizar el repositorio de códigos
+    Given el estudiante ingresa a la aplicación
+    When visualice el inicio y encuentre el archivo de su preferencia
+    Then podrá descargar de manera exitosa el archivo desde el repositorio
+    Examples:
+        | Ingresar a la app | visualiza inicio | descargar |
+        | click()  | visualiza  | click() |
