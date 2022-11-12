@@ -1,0 +1,8 @@
+Feature: HU10
+Scenario: Crear Team
+    Given el estudiante se encuentra en la sección de Team s
+    When el usuario crea un nuevo Team 
+    Then el Team se creará y se podrán comunicar mediante su chat grupal
+    Examples:
+        | Sección Team S | Botón Crear Team | resultado |
+        | visualiza  | click()  | visualiza  |
