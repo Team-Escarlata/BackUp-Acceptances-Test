@@ -1,0 +1,9 @@
+Feature: HU05
+Scenario: Subir videotutoriales y microcurso
+TA01:
+Given el usuario ingresa a la aplicación
+When presiona sobre el botón “subir material” 
+Then el video se subirá una vez finalizada la carga.
+Examples:
+    | Inicio sesión | Buscar sección “subir material” | resultado |
+    | Bryan Vilca  | click()  | visualiza |
