@@ -1,0 +1,8 @@
+Feature: HU13
+Scenario: Contactar un asesor
+    Given el estudiante quiere contactar a un asesor 
+    When el estudiante presiona el botón “Contactar”
+    Then el sistema da la información necesario para contactar al asesor 
+    Examples:
+        | Sección contactar | Boton “Contactar” | resultado |
+        | click()  | click()  | visualiza  |
