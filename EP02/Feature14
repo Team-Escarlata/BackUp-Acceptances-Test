@@ -1,0 +1,10 @@
+Feature: HU14
+Scenario: Suscripción a un micro curso
+    Given el estudiante que quiere aprender a programar entra a la página
+    When ingresa a su cuenta, seleccionará la opción “Asesores” donde
+    podrá visualizar los microcursos en el lenguaje que desea aprender
+    Then se le mostrará los diversos micro cursos disponibles
+    para que se pueda suscribir dependiendo del asesor elegido
+    Examples:
+        | Sección Inicio | Sección microcurso | Mostrar Suscripción | resultado |
+        | click()  | click()  | click() | visualiza  |
