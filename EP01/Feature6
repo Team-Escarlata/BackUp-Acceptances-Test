@@ -1,0 +1,9 @@
+Feature: HU06
+Scenario:  Formulario de ingreso de número de contacto
+    TA01:
+    Given el asesor se encuentra editando su perfil
+    When  le de click “Ingresar numero de contacto”
+    Then  el sistema le enviará un mensaje de confirmacion de numero de contacto a su correo
+    Examples:
+        | Sección perfil  | Boton de Ingresar contacto | resultado |
+        | visualiza | click() | visualiza  |
