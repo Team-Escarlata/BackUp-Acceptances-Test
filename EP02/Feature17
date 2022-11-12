@@ -1,0 +1,8 @@
+Feature: HU17
+Scenario: Vincular redes sociales
+    Given el estudiante se encuentra en la sección “Perfil”
+    When clickee el botón vincular
+    Then podrá vincular de manera exitosa sus redes sociales con su perfil de login
+    Examples:
+        | Sección perfil | boton vincular | resultado |
+        | visualiza  | click()  | visualiza |
