@@ -1,12 +1,10 @@
-Feature: HU12 Conocer los planes y precios
-
-    Creación del archivo “plans.html” y su implementación en CSS
-Scenario: Creación de la sección planes
+Feature: HU03
+Scenario: Vincular redes sociales
     TA01:
-    Given el usuario quiere conocer los planes y precios
-    When ingresa al botón ``planes``
-    Then aparece los planes de pago
+    Given el asesor se encuentra en la sección “Perfil”
+    When clickee el botón vincular y acceda sus credenciales
+    Then podrá vincular de manera exitosa sus redes sociales con su perfil de login
     Examples:
-        | Planes | Botón planes| resultado |
+        | Sección perfil | Botón vincular | resultado |
         | click()  | click()  | visualiza |
         
