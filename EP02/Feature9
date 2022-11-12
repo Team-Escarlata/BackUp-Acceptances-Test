@@ -1,0 +1,9 @@
+Feature: HU09
+Scenario: Cambiar fotos del perfil
+    Given  el estudiante se encuentra en la sección de Cambio de perfil
+    When elige la opción de Imagen a subir y selecciona la imagen de su preferencia
+    Then  se observa la actualización de la imagen en el perfil
+    Examples:
+        | Sección perfil | Botón Imagen a subir | resultado |
+        | visualiza  | click()  | visualiza  |
+        
